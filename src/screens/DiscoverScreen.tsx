@@ -1,10 +1,14 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+
+import { SearchBar, Banner, Hotels } from "../components";
 
 export const DiscoverScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <SearchBar />
+      <Banner />
+      <Hotels />
     </View>
   );
 };
@@ -13,5 +17,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
     flex: 1,
+    paddingHorizontal: 10,
   },
 });

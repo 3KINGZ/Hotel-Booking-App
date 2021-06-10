@@ -6,7 +6,7 @@ import HomeStackNavigator from "./HomeStackNavigator";
 import { LocationScreen, PicturesScreen, BookmarkScreen } from "../screens";
 
 import { COLORS } from "../styles";
-import { TabBarIcon } from "../components/TabBarIcon";
+import { TabBarIcon } from "../components";
 
 const Tab = createBottomTabNavigator();
 
