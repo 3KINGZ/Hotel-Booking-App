@@ -4,12 +4,12 @@ import Icon from "react-native-vector-icons/AntDesign";
 
 import { COLORS } from "../styles";
 
-export const SearchBar = ({ value, onChange }) => {
+export const SearchBar = ({ value, onChange }: any) => {
   return (
     <View style={styles.container}>
       <Icon name="search1" size={18} color={COLORS.buttonColor} />
       <TextInput
-        onChange={onChange}
+        onChangeText={text => onChange(text)}
         style={styles.input}
         placeholder="Search destinations"
         placeholderTextColor={COLORS.buttonColor}
