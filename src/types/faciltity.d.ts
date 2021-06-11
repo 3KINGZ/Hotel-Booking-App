@@ -1,4 +1,4 @@
-interface Faciltity {
+interface Facilitity {
   id: string;
   facility: string;
 }

@@ -5,15 +5,16 @@ import { SearchBar, Banner, ListHeader, Hotels } from "../components";
 import { hotels } from "../assets/data";
 
 export const DiscoverScreen = () => {
-  const [filterHotels, setFilterHotels] = useState(hotels);
+  const [filterHotels, setFilterHotels] = useState<IHotel[]>(hotels);
   const [search, setSearch] = useState("");
 
   const filterHotel = (searchTerm: string) => {
     setSearch(searchTerm);
+
     setFilterHotels(
       !searchTerm
         ? hotels
-        : hotels.filter((hotel: any) => hotel.location.includes(searchTerm)),
+        : hotels.filter((hotel: IHotel) => hotel.location.includes(searchTerm)),
     );
   };
 

@@ -10,7 +10,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
     ],
   },
   {
@@ -24,7 +24,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
       { id: "4", facility: "Pool" },
     ],
   },
@@ -39,7 +39,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
       { id: "4", facility: "Pool" },
     ],
   },
@@ -54,7 +54,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
     ],
   },
   {
@@ -68,7 +68,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
       { id: "4", facility: "Pool" },
     ],
   },
@@ -83,7 +83,7 @@ export const hotels = [
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
-      { id: "3", facilty: "Single" },
+      { id: "3", facility: "Single" },
     ],
   },
 ];
