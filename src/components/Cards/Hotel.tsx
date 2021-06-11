@@ -1,15 +1,22 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { scale, verticalScale } from "react-native-size-matters";
 import Icon from "react-native-vector-icons/Ionicons";
 
 import { COLORS } from "../../styles";
 
-export const Hotel = ({ hotel }: { hotel: IHotel }) => {
+export const Hotel = ({
+  hotel,
+  active,
+}: {
+  hotel: IHotel;
+  active?: boolean;
+}) => {
   const { name, image, location, price } = hotel;
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      style={active ? styles.containerActive : styles.container}>
       <Image source={image} style={styles.image} />
       <View style={styles.detailContainer}>
         <View style={styles.namePriceContainer}>
@@ -23,7 +30,7 @@ export const Hotel = ({ hotel }: { hotel: IHotel }) => {
           <Text style={styles.locationText}>{location}</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -7,6 +7,7 @@ import { LocationScreen, PicturesScreen, BookmarkScreen } from "../screens";
 
 import { COLORS } from "../styles";
 import { TabBarIcon } from "../components";
+import routes from "./routes";
 
 const Tab = createBottomTabNavigator();
 
@@ -24,7 +25,7 @@ const AppTabNavigator = () => {
         showLabel: false,
       }}>
       <Tab.Screen
-        name="Home"
+        name={routes.HOME}
         component={HomeStackNavigator}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -33,7 +34,7 @@ const AppTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Settings"
+        name={routes.LOCATION}
         component={LocationScreen}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -42,7 +43,7 @@ const AppTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Pictures"
+        name={routes.PICTURES}
         component={PicturesScreen}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -51,7 +52,7 @@ const AppTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Bookmark"
+        name={routes.BOOKMARK}
         component={BookmarkScreen}
         options={{
           tabBarIcon: ({ focused }) => (

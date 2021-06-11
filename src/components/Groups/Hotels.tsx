@@ -8,7 +8,9 @@ export const Hotels = ({ data }: { data: IHotel[] }) => {
     <FlatList
       style={styles.container}
       data={data}
-      renderItem={({ item }) => <Hotel hotel={item} />}
+      renderItem={({ item }) => (
+        <Hotel hotel={item} active={data.indexOf(item) === 0 ? true : false} />
+      )}
     />
   );
 };

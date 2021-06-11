@@ -51,7 +51,7 @@ export const Banner = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: scale(200),
+    height: scale(180),
     borderRadius: 15,
     marginVertical: 10,
     overflow: "hidden",
