@@ -5,5 +5,6 @@ interface IHotel {
   location: string;
   description: string;
   price: string;
+  rating: number;
   facilities: Facilitity[];
 }

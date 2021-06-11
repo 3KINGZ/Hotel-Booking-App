@@ -1,9 +1,11 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { scale, verticalScale } from "react-native-size-matters";
+import { useNavigation } from "@react-navigation/native";
 import Icon from "react-native-vector-icons/Ionicons";
 
 import { COLORS } from "../../styles";
+import routes from "../../navigation/routes";
 
 export const Hotel = ({
   hotel,
@@ -12,10 +14,18 @@ export const Hotel = ({
   hotel: IHotel;
   active?: boolean;
 }) => {
-  const { name, image, location, price } = hotel;
+  const navigation = useNavigation();
+
+  const { id, name, image, location, price } = hotel;
 
   return (
     <TouchableOpacity
+      onPress={() =>
+        navigation.navigate(routes.DETAIL_STACK, {
+          screen: routes.DETAIL,
+          params: { id },
+        })
+      }
       style={active ? styles.containerActive : styles.container}>
       <Image source={image} style={styles.image} />
       <View style={styles.detailContainer}>

@@ -7,6 +7,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$125",
+    rating: 7.5,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
@@ -21,6 +22,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$120",
+    rating: 9,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
@@ -36,6 +38,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$115",
+    rating: 7,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
@@ -51,6 +54,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$150",
+    rating: 9,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
@@ -65,6 +69,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$100",
+    rating: 6,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },
@@ -80,6 +85,7 @@ export const hotels = [
     description:
       "Beautiful place with swimming pool and facing right into to the sunset Anim anim dolore laborum nulla anim et et nisi. Labore incididunt pariatur aute reprehenderit ad irure quis sint esse. Cupidatat proident nulla ullamco esse culpa laboris sint eiusmod. Quis labore culpa eiusmod reprehenderit.",
     price: "$200",
+    rating: 8.5,
     facilities: [
       { id: "1", facility: "Wifi" },
       { id: "2", facility: "AC" },

@@ -17,10 +17,11 @@ const AppTabNavigator = () => {
       tabBarOptions={{
         style: {
           backgroundColor: COLORS.buttonColor,
-          width: "80%",
+          width: "85%",
           alignSelf: "center",
           borderRadius: 10,
-          marginBottom: 20,
+          marginBottom: 10,
+          marginTop: 10,
         },
         showLabel: false,
       }}>

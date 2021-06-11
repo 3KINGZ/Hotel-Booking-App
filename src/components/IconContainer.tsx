@@ -1,15 +1,26 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, StyleSheet } from "react-native";
 import { COLORS } from "../styles";
 
-export default function IconContainer({ children }: { children: Element }) {
-  return <View style={styles.container}>{children}</View>;
+interface IIconContainer {
+  children: Element;
+  style?: object;
+  onPress?: any;
 }
+
+export const IconContainer = ({ children, style, onPress }: IIconContainer) => {
+  return (
+    <TouchableOpacity onPress={onPress} style={[styles.container, style]}>
+      {children}
+    </TouchableOpacity>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.grey,
     borderRadius: 10,
     padding: 10,
+    opacity: 3,
   },
 });

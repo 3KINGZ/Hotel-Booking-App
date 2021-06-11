@@ -6,7 +6,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 import { DiscoverScreen } from "../screens";
 import routes from "./routes";
-import IconContainer from "../components/IconContainer";
+import { IconContainer } from "../components";
 import { COLORS } from "../styles";
 
 const Stack = createStackNavigator();
@@ -19,7 +19,7 @@ const HomeStackNavigator = () => {
         component={DiscoverScreen}
         options={{
           headerLeft: () => (
-            <View style={{ paddingLeft: 10 }}>
+            <View style={{ paddingLeft: 15 }}>
               <IconContainer>
                 <Icon name="menu-outline" size={24} />
               </IconContainer>
