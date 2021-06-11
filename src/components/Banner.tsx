@@ -78,15 +78,17 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 10,
     left: 20,
+    alignItems: "center",
   },
   button: {
     width: scale(100),
     backgroundColor: COLORS.buttonColorActive,
-    borderRadius: 5,
+    borderRadius: 10,
     padding: 5,
     flexDirection: "row",
     alignItems: "center",
     marginHorizontal: 3,
+    justifyContent: "center",
   },
   buttonText: {
     fontSize: scale(15),
@@ -100,5 +102,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     marginHorizontal: 3,
+    justifyContent: "center",
+    marginLeft: 15,
   },
 });

@@ -32,5 +32,6 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     marginLeft: 20,
+    color: COLORS.buttonColor,
   },
 });

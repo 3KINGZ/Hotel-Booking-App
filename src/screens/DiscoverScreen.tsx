@@ -1,14 +1,16 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import { SearchBar, Banner, Hotels } from "../components";
+import { SearchBar, Banner, ListHeader, Hotels } from "../components";
+import { hotels } from "../assets/data";
 
 export const DiscoverScreen = () => {
   return (
     <View style={styles.container}>
       <SearchBar />
       <Banner />
-      <Hotels />
+      <ListHeader />
+      <Hotels data={hotels} />
     </View>
   );
 };

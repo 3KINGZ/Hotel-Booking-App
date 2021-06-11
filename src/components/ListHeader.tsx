@@ -1,17 +1,20 @@
 import React from "react";
-import { View, Text, FlatList } from "react-native";
-import { scale } from "react-native-size-matters";
+import { View, Text } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
-import { COLORS } from "../../styles";
-import { Hotel } from "../Cards";
+import { scale, verticalScale } from "react-native-size-matters";
 
-const Header = () => {
+import { COLORS } from "../styles";
+
+export const ListHeader = () => {
   return (
     <View
       style={{
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
+        width: "95%",
+        alignSelf: "center",
+        marginTop: verticalScale(5),
       }}>
       <Text style={{ color: COLORS.brownTextColor, fontSize: scale(24) }}>
         Hotels
@@ -34,15 +37,5 @@ const Header = () => {
         />
       </View>
     </View>
-  );
-};
-
-export const Hotels = ({ data }: { data: IHotel[] }) => {
-  return (
-    <FlatList
-      style={{ width: "95%", alignSelf: "center" }}
-      data={data}
-      renderItem={({ item }) => <Hotel hotel={item} />}
-    />
   );
 };
