@@ -3,10 +3,8 @@ import { View, Text, StyleSheet } from "react-native";
 import { scale } from "react-native-size-matters";
 import IIcons from "react-native-vector-icons/Ionicons";
 import MIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import { COLORS, FONTS } from "../../styles";
 
-//Ionicons wifi-outline bed-outline
-//MCI fan pool
+import { COLORS, FONTS } from "../../styles";
 
 const icons: { [key: string]: any } = {
   wifi: { name: "wifi-outline", set: "Ionicons" },

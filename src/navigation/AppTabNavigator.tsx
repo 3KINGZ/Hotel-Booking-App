@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import HomeStackNavigator from "./HomeStackNavigator";
 import { LocationScreen, PicturesScreen, BookmarkScreen } from "../screens";
-
 import { COLORS } from "../styles";
 import { TabBarIcon } from "../components";
 import routes from "./routes";
