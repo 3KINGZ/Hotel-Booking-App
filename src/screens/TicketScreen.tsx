@@ -56,7 +56,7 @@ export const TicketScreen = ({ route, navigation }: any) => {
             </View>
 
             <View style={styles.totalPriceContainer}>
-              <Text style={styles.priceTitle}>Total price:</Text>
+              <Text style={styles.priceTitle}>Total Price:</Text>
               <Text style={styles.price}>$ 775</Text>
             </View>
           </View>
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   },
   ticketMainContainer: {
     marginVertical: verticalScale(15),
-    padding: 30,
+    padding: 20,
     width: "100%",
   },
   ticketMetaDataContainer: {
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   totalPriceContainer: {
-    padding: 10,
+    padding: 15,
     flexDirection: "row",
     justifyContent: "space-between",
     backgroundColor: COLORS.lightBlue,
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
   },
   priceTitle: {
     color: COLORS.grey2,
-    fontSize: scale(15),
+    fontSize: scale(16),
     fontFamily: FONTS.medium,
   },
   price: {
