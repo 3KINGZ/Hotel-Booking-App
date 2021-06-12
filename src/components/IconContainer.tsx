@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: COLORS.grey,
     borderRadius: 10,
-    padding: 10,
+    padding: 7,
     opacity: 3,
   },
 });

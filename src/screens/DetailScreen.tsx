@@ -16,13 +16,16 @@ import { hotels } from "../assets/data";
 import { Tags, IconContainer, Button } from "../components";
 import { COLORS, FONTS } from "../styles";
 import { parseRating } from "../utils";
+import routes from "../navigation/routes";
 
 export const DetailScreen = ({ route, navigation }: any) => {
   const [numOfLines, setNumOfLines] = useState<number>(2);
 
-  const hotel = hotels.find((hotel: IHotel) => hotel.id === route.params.id);
+  const hotel: IHotel = hotels.find(
+    (hotel: IHotel) => hotel.id === route.params.id,
+  );
 
-  const { name, image, location, rating, facilities, price, description } =
+  const { id, name, image, location, rating, facilities, price, description } =
     hotel;
 
   return (
@@ -95,9 +98,11 @@ export const DetailScreen = ({ route, navigation }: any) => {
           </TouchableOpacity>
         </View>
       </View>
+
       <Button
         title="Book Hotel"
         size="md"
+        onPress={() => navigation.navigate(routes.TICKET, { id })}
         style={{
           containerStyle: { alignSelf: "center" },
           textStyle: { fontFamily: FONTS.bold, fontSize: scale(20) },
@@ -115,7 +120,7 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: "100%",
-    height: scale(350),
+    height: scale(345),
     top: 0,
     alignSelf: "center",
     borderRadius: 15,
@@ -123,7 +128,8 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0,0,0,0.8)",
     elevation: 10,
     shadowOpacity: 5.0,
-    marginVertical: 10,
+    marginVertical: 7,
+    shadowRadius: 2,
   },
   image: {
     flex: 1,
@@ -150,7 +156,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginVertical: verticalScale(10),
+    marginVertical: verticalScale(5),
   },
   locationContainer: {
     flexDirection: "row",

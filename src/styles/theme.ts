@@ -5,10 +5,11 @@ export const COLORS = {
   grey2: "#cecbce",
   textColor: "#bac4cb",
   lightBlue: "#f4f8fb",
-  brownTextColor: "#5f544f",
+  brownTextColor: "#5c5c5c",
   greyTextColor: "#909396",
   blueTextColor: "#61a9ba",
   brownTextColor2: "#5a5a5a",
+  ticketScreenBG: "#f4fafc",
 };
 
 export const FONTS = {

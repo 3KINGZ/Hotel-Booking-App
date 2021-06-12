@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 import { DiscoverScreen } from "../screens";
 import routes from "./routes";
 import { IconContainer } from "../components";
-import { COLORS } from "../styles";
+import { COLORS, FONTS } from "../styles";
 
 const Stack = createStackNavigator();
 
@@ -28,7 +28,7 @@ const HomeStackNavigator = () => {
           headerTitleAlign: "center",
           headerStyle: { elevation: 0, shadowOpacity: 0 },
           headerTintColor: COLORS.buttonColor,
-          headerTitleStyle: { fontWeight: "bold" },
+          headerTitleStyle: { fontFamily: FONTS.medium },
         }}
       />
     </Stack.Navigator>
