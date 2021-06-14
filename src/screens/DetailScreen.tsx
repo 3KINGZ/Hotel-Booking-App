@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   ScrollView,
   View,
@@ -28,8 +28,10 @@ export const DetailScreen = ({ route, navigation }: any) => {
   const { id, name, image, location, rating, facilities, price, description } =
     hotel;
 
+  let scrollView: any = useRef();
+
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} ref={scrollView}>
       <View style={styles.imageContainer}>
         <View style={{ flex: 1, elevation: 0, zIndex: 0, width: "100%" }}>
           <Image style={styles.image} source={image} />
@@ -89,7 +91,10 @@ export const DetailScreen = ({ route, navigation }: any) => {
           <TouchableOpacity
             onPress={
               numOfLines === 2
-                ? () => setNumOfLines(100)
+                ? () => {
+                    scrollView.current.scrollToEnd({ animated: true });
+                    setNumOfLines(0);
+                  }
                 : () => setNumOfLines(2)
             }>
             <Text style={styles.expandBTN}>
